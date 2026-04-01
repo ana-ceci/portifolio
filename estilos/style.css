@@ -127,6 +127,12 @@ article {
   border-radius: 8px;
 }
 
+article h2 {
+  color: var(--destaque);
+  margin-bottom: 20px;
+  font-size: 1.3em;
+}
+
 #skill-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -160,6 +166,38 @@ article {
   height: 100%;
   background-color: var(--destaque);
   border-radius: 4px;
+}
+
+#formacao-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+
+}
+
+#formacao-container .curso {
+  background-color: var(--fundo-card);
+  border-radius: 8px;
+  border-left: 5px solid var(--destaque-inverso);
+  padding-left: 15px;
+  transition: border-whidth 0.5s, border-color 0.5s;
+}
+
+#formacao-container .curso:hover {
+  border-left-width: 10px;
+  border-color: var(--destaque);
+  cursor: pointer;
+}
+
+#formacao-container .periodo {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var(--texto);
+}
+
+#formacao-container .instituicao {
+  font-size: 1.1em;
+  color: var(--destaque-inverso);
 }
 
 @media screen and (min-width:768px) {
