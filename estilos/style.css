@@ -21,14 +21,24 @@
   --texto-inverso: #ffffff;
   --destaque: #A024E3;
   --destaque-inverso: #5D3872;
-  --fundo-card: ffffff;
+  --fundo-card: #ffffff;
+}
+
+body.escuro{
+   --fundo-principal: #222222;
+  --texto: #ffffff;
+  --texto-inverso: #333333;
+  --destaque: #A024E3;
+  --destaque-inverso: #5D3872;
+  --fundo-card: #222222;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5em;
   background-color: var(--fundo-principal);
-  color: var(--texto)
+  color: var(--texto);
+  transition:background-color 1s, color 1s;
 }
 
 header {
