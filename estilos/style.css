@@ -68,7 +68,7 @@ nav#menu a {
 }
 
 nav#menu a:hover {
-  background-color: var(--destaque);
+  background-color: var(--fundo-principal);
   color: var(--destaque)
 }
 
